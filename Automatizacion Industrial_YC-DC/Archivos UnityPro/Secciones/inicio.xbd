@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FBDExchangeFile>
+	<fileHeader company="Schneider Automation" product="Unity Pro XL V11.0 - 151207" dateTime="date_and_time#2022-1-9-22:59:22" content="Fichero fuente de bloque de función derivado" DTDVersion="41"></fileHeader>
+	<contentHeader name="Proyecto" version="0.0.73" dateTime="date_and_time#2022-1-9-21:19:52"></contentHeader>
+	<program>
+		<identProgram name="Inicio1" type="section" task="MAST"></identProgram>
+		<FBDSource nbRows="24" nbColumns="36">
+			<networkFBD>
+				<FFBBlock instanceName="Can_Handler_0" typeName="CAN_HANDLER" additionnalPinNumber="0" enEnO="false" width="19" height="6">
+					<objPosition posX="19" posY="1"></objPosition>
+					<descriptionFFB execAfter="">
+						<inputVariable invertedPin="false" formalParameter="EN"></inputVariable>
+						<inputVariable invertedPin="false" formalParameter="NETWORKOPERATIONAL" effectiveParameter="Activo"></inputVariable>
+						<inputVariable invertedPin="false" formalParameter="AXIS" effectiveParameter="Axis_Ref_0"></inputVariable>
+						<outputVariable invertedPin="false" formalParameter="ENO"></outputVariable>
+						<outputVariable invertedPin="false" formalParameter="AXISREADY" effectiveParameter="Estado_Com_CAN"></outputVariable>
+						<outputVariable invertedPin="false" formalParameter="ERRORID" effectiveParameter="Error_Com_CAN"></outputVariable>
+					</descriptionFFB>
+				</FFBBlock>
+				<FFBBlock instanceName="TP_1" typeName="TP" additionnalPinNumber="0" enEnO="false" width="7" height="6">
+					<objPosition posX="22" posY="16"></objPosition>
+					<descriptionFFB execAfter="">
+						<inputVariable invertedPin="false" formalParameter="EN"></inputVariable>
+						<inputVariable invertedPin="true" formalParameter="IN" effectiveParameter="Timer_trig"></inputVariable>
+						<inputVariable invertedPin="false" formalParameter="PT" effectiveParameter="t#2000ms"></inputVariable>
+						<outputVariable invertedPin="false" formalParameter="ENO"></outputVariable>
+						<outputVariable invertedPin="false" formalParameter="Q" effectiveParameter="Timer_trig"></outputVariable>
+						<outputVariable invertedPin="false" formalParameter="ET"></outputVariable>
+					</descriptionFFB>
+				</FFBBlock>
+				<FFBBlock instanceName="TP_2" typeName="TP" additionnalPinNumber="0" enEnO="false" width="7" height="6">
+					<objPosition posX="22" posY="24"></objPosition>
+					<descriptionFFB execAfter="">
+						<inputVariable invertedPin="false" formalParameter="EN"></inputVariable>
+						<inputVariable invertedPin="false" formalParameter="IN" effectiveParameter="Timer_trig"></inputVariable>
+						<inputVariable invertedPin="false" formalParameter="PT" effectiveParameter="t#1000ms"></inputVariable>
+						<outputVariable invertedPin="false" formalParameter="ENO"></outputVariable>
+						<outputVariable invertedPin="false" formalParameter="Q" effectiveParameter="Habilito"></outputVariable>
+						<outputVariable invertedPin="false" formalParameter="ET"></outputVariable>
+					</descriptionFFB>
+				</FFBBlock>
+			</networkFBD>
+		</FBDSource>
+	</program>
+	<dataBlock>
+		<variables name="Error_Com_CAN" typeName="UDINT"></variables>
+		<variables name="TP_2" typeName="TP"></variables>
+		<variables name="Estado_Com_CAN" typeName="BOOL"></variables>
+		<variables name="Timer_trig" typeName="BOOL"></variables>
+		<variables name="Habilito" typeName="EBOOL" topologicalAddress="%Q0.1.17"></variables>
+		<variables name="Activo" typeName="BOOL">
+			<variableInit value="TRUE"></variableInit>
+		</variables>
+		<variables name="TP_1" typeName="TP"></variables>
+	</dataBlock>
+</FBDExchangeFile>

@@ -1,0 +1,4 @@
+Los archivos AI_0, AO_0, DO_DI_0 y DR_0 pueden ser abiertos con "modsim.exe" para observar las variables en tiempo real.
+DATABASE_15_05.csv se utiliza para cargar las variables utilizadas dentro del SCADA con sus correspondientes memorias.
+DATABASE0.MBE es el archivo de configuración de los bloques de memoria y dirección utilizada para la comunicación PLC-SCADA.
+En la carpeta "Archivos" se encuentra las partes del sistema SCADA, se recomienda copiar todos los archivos de esa carpeta en C:\Program Files (x86)\Proficy\Proficy iFIX\PIC , abrir iFix y seleccionar el programa principal "ppal.grf" .
