@@ -1,0 +1,9 @@
+Cargo\_Historico.m: Se utiliza para interpretar y graficar datos históricos obtenidos del archivo que se guarda por medio de SCADA.
+distintos\_PID.m: compara distintos escalones y PID de las variables con ejemplos ya guardados.
+Graficos.m: Script preparado para graficar las variables PIT01, PIT02 y FT01 vs. tiempo.
+metodo\_string.m: utilizado para realizar la estimación de la planta según método String.
+Levanto\_datos\_CSV\_V3.m: Con este archivo se guardan datos a través de un cliente OPC.
+Lectura\_Datos\_OPC\_V3.slx:	Archivo simulink utilizado en conjunto con Levanto\_datos\_CSV\_V3.m
+Ejemplos/Referencias.png: Datos de variable, PID y escalones de los ejemplos encontrados en la carpeta.
+Carpeta EjHist: Archivos de ejemplo para utilizar con Cargo\_Historico.m.
+Carpeta Carpeta01: Carpeta dónde se guardarán los archivos generados con  Levanto\_datos\_CSV\_V3.m
