@@ -2,6 +2,7 @@
 Proyecto final realizado para la materia Automatización Industrial perteneciente a la carrera de Ingeniería Electrónica de la UNPSJB
 
 Alumnos:
+
   Caamiña Daniela
 
   Yapura Cristian
